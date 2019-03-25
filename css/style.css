@@ -2,6 +2,8 @@
 
 /* link the web font used for the level 1 heading here */
 
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
 /*////////// Global Styles //////////*/
 
 body {
@@ -10,11 +12,104 @@ body {
 	font-family: 'Times New Roman', serif; 
 }
 
+h2 {
+  font-size: 32px;
+  color: #6F7F7A;
+}
+
+img {
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+header,
+main,
+footer {
+  /*float: left;*/
+  height: auto;
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .wrapper {
 	width: 960px;
 	margin: 0 auto;
 	background: #fff;
 	padding: 0 45px 20px;
+	height: auto;
+}
+
+.header {
+  /*background-color: green;*/
+  /*height: auto;*/
+  border-bottom: 1px solid #ccc;
+}
+
+.header_-_logo {
+  display: block;
+}
+
+.header_-_logo a {
+  font-size: 80px;
+  font-family: 'Libre Baskerville', serif;
+  color: #6F7F7A;
+  /*text-decoration: none;*/
+  text-decoration: none solid rgb(111, 127, 122);
+  font-weight: bold;
+  word-spacing: 0;
+}
+
+.main img {
+  /*display: block;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*width: 100%;*/
+  border : 5px solid  #98ADA6
+}
+
+.main_-_about h2 {
+  color: #6F7F7A;
+}
+
+/*.main_-_press_--_companies {*/
+/*  display: block;*/
+/*  width: 100%;*/
+/*}*/
+
+.main_-_press_--_companies img {
+  border: 5px solid  #6F7F7A;
+
+}
+
+.footer p {
+  text-align: right;
+}
+
+
+/*--- Layout ---------------------------*/
+
+
+.col-4 {
+  float: left;
+  width: 23.5%;
+  margin: 1%;
+}
+
+.col-4:first-child {
+  margin-left: 0;
+}
+
+.col-4:last-child {
+  margin-right: 0;
 }
 
 /* Write all remaining styles here */
